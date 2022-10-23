@@ -1,17 +1,19 @@
 package com.clean.architecture.service;
 
-import com.clean.architecture.form.ProductForm;
+import com.clean.architecture.form.StudentForm;
 import org.springframework.http.ResponseEntity;
 
-public interface ProductSvc {
+import java.util.List;
 
-    ResponseEntity<Object> create(ProductForm form);
+public interface StudentService {
+
+    ResponseEntity<Object> create(StudentForm form);
 
     ResponseEntity<Object> getAll();
 
     ResponseEntity<Object> findById(Long id);
 
-    ResponseEntity<Object> updateById(ProductForm form, Long id);
+    ResponseEntity<Object> updateById(StudentForm form, Long id);
 
     ResponseEntity<Object> deleteById(Long id);
 }

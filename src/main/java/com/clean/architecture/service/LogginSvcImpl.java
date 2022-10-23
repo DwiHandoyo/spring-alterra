@@ -1,6 +1,6 @@
 package com.clean.architecture.service;
 
-import com.clean.architecture.model.LoggingModel;
+import com.clean.architecture.domain.model.LoggingModel;
 import com.clean.architecture.repository.LoggingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

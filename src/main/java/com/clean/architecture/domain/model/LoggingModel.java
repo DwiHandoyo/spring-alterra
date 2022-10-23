@@ -1,11 +1,9 @@
-package com.clean.architecture.model;
+package com.clean.architecture.domain.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.clean.architecture.common;
+package com.clean.architecture.domain.common;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;

@@ -1,5 +1,6 @@
-package com.clean.architecture.model;
+package com.clean.architecture.domain.model;
 
+import com.clean.architecture.domain.common.BaseDao;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;

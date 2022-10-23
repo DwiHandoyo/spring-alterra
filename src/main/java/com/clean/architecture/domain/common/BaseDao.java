@@ -1,9 +1,8 @@
-package com.clean.architecture.model;
+package com.clean.architecture.domain.common;
 
 import com.clean.architecture.constant.AppConstant;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;

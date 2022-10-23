@@ -1,4 +1,4 @@
-package com.clean.architecture.common;
+package com.clean.architecture.domain.common;
 
 import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;

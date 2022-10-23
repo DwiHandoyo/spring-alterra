@@ -1,6 +1,6 @@
 package com.clean.architecture.repository;
 
-import com.clean.architecture.domain.model.ProductModel;
+import com.clean.architecture.domain.model.StudentModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 @Transactional
-public interface ProductRepository extends JpaRepository<ProductModel, Long> {
+public interface StudentRepository extends JpaRepository<StudentModel, Long> {
 
     @Modifying
     @Query(value = "update product set is_deleted = :flag where id = :id", nativeQuery = true)
