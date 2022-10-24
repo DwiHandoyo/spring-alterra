@@ -66,10 +66,7 @@ public class JwtTokenProvider {
 
     public boolean validateToken(String token, HttpServletRequest request, String bodyRequest) {
         String username = getUsername(token);
-        if (request.getRequestURI().equals("/v1/product")) {
-            return username.equals("admin");
-        }
-        if (request.getRequestURI().equals("/v1/student")) {
+        if (request.getRequestURI().contains("/v1/student")) {
             return username.equals("admin");
         }
 

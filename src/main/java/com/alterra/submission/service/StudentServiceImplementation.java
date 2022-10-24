@@ -76,6 +76,7 @@ public class StudentServiceImplementation implements StudentService {
         try {
             Optional<StudentModel> data = studentRepo.findById(id);
             if (!data.isPresent()) return ResponseUtil.build(MessageConstant.DATA_NOT_FOUND, null, HttpStatus.NOT_FOUND);
+            System.out.println(data.get().getName());
             studentRepo.deleteOne(true, data.get().getId());
             return ResponseUtil.build(MessageConstant.SUCCESS_DELETE, null, HttpStatus.OK);
         }catch (Exception e){

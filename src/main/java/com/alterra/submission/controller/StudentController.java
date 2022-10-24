@@ -30,7 +30,7 @@ public class StudentController {
         return studentSvc.findById(id);
     }
 
-    @PostMapping(value = "{id}")
+    @PutMapping(value = "{id}")
     public ResponseEntity<Object> update(@RequestBody StudentForm form, @PathVariable Long id){
         return studentSvc.updateById(form, id);
     }
